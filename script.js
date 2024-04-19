@@ -8,18 +8,22 @@ function Submitt(){
 
     if(value==="" && value2 === ""){
         let p_ele = document.getElementById("enter_name")
-        p_ele.textContent = "Kindly enter your name and password"
+        p_ele.textContent = "Kindly enter your NAME and PASSWORD"
+        p_ele.style.color = "red"
     }
     else if(value === ""){
         let p_ele = document.getElementById("enter_name")
-        p_ele.textContent = "Kindly enter your name"
+        p_ele.textContent = "Kindly enter your NAME"
+        p_ele.style.color = "red"
     }
     else if (value2 === ""){
         let p_ele = document.getElementById("enter_name")
-        p_ele.textContent = "Kindly enter your password"
+        p_ele.textContent = "Kindly enter your PASSWORD"
+        p_ele.style.color = "red"
     }
     else{
         let p_ele = document.getElementById("enter_name")
-        p_ele.textContent = "Congratulations!!"  
+        p_ele.textContent = "Congratulations!!"
+        p_ele.style.color = "green"
     }
 }
